@@ -1,0 +1,48 @@
+idealSessionTimeOut: 30
+otpExpiryTime: 2
+otpCount: 50
+resendEmailCounter: 10
+sessionExpiryTime: 15
+
+superAdminConfig:
+  email: super@eazypaymentz.com
+  phoneNo: 1999999999
+  companyName: testCompany
+  address1: address1
+  address2: address2
+  address3: address3
+  country: India
+  pincode: 110011
+smsSenderId: ANLYTQ
+apiEndPoint: https://development.vpayapp.com/pg/
+# apiEndPoint: https://pay.vpayapp.com/pg/
+apiReportEndPoint: http://localhost:7079/download/
+apiCustomerNotifyUrl: https://pgapi.eazypaymentz.com/pg/testConsume
+apiCustomerExclude: WORDPRESS,ABCD,EFGH
+apiPayoutEndPoint:
+  payoutUrl: http://localhost/payout/merchant/
+  payoutBaseUrl: http://localhost/payout/
+awsConfiguration:
+  arnEndPoint: arn:aws:kms:ap-south-1:838635235256:key/47e45523-c789-4e5c-ba1d-36c4e71689a8
+  contextKey: analyticsKey2211221112
+  contextValue: analyticsValue2211221112
+
+reportArgument:
+  reportPath: /home/ubuntu/reports/
+  #reportPath: /home/ani/ezfile/
+  reportFileExpiry: 90
+  reportHeaderStyle:
+    font: Calibri
+    size: 12
+    bold: Y
+  reportDataStyle:
+    font: Calibri
+    size: 9
+    bold: N
+
+awsCredential:
+  s3FileUrl: https://s3.ap-south-1.amazonaws.com
+  s3AccessKey: AKIAZYJ6IWTZBJC6KNX2
+  s3SecretAccessKey: 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
+  s3TxnStsBucketName: vpay-app-files
+    
