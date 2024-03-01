@@ -18,17 +18,17 @@ import com.amazonaws.encryptionsdk.kms.KmsMasterKeyProvider;
 @Component
 public class AmazonKMS {
 
-	static String keyArn = "arn:aws:kms:ap-south-1:838635235256:key/47e45523-c789-4e5c-ba1d-36c4e71689a8";
-	static AwsCrypto crypto = AwsCrypto.builder().withCommitmentPolicy(CommitmentPolicy.RequireEncryptRequireDecrypt)
-			.build();
-	static BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIA4GQUOE64NBORSXGD",
-			"uOCyNbgYRftaoJZjlXPJhM97mzT5IKeFLHVJ+Jk7");
-	static KmsMasterKeyProvider keyProvider = KmsMasterKeyProvider.builder().withCredentials(awsCreds)
-			.buildStrict(keyArn);
-	static Map<String, String> encryptionContext = Collections.singletonMap("ExampleContextKey", "ExampleContextValue");
+	// static String keyArn = "arn:aws:kms:ap-south-1:838635235256:key/47e45523-c789-4e5c-ba1d-36c4e71689a8";
+	// static AwsCrypto crypto = AwsCrypto.builder().withCommitmentPolicy(CommitmentPolicy.RequireEncryptRequireDecrypt)
+	// 		.build();
+	// static BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIA4GQUOE64NBORSXGD",
+	// 		"uOCyNbgYRftaoJZjlXPJhM97mzT5IKeFLHVJ+Jk7");
+	// static KmsMasterKeyProvider keyProvider = KmsMasterKeyProvider.builder().withCredentials(awsCreds)
+	// 		.buildStrict(keyArn);
+	// static Map<String, String> encryptionContext = Collections.singletonMap("ExampleContextKey", "ExampleContextValue");
 
-/* 
-<------------------------------------------------AsMishra AWS CREDS-------------------------------------------->
+// /* 
+// <------------------------------------------------AsMishra AWS CREDS-------------------------------------------->
  static String keyArn = "arn:aws:kms:ap-south-1:670682363122:key/e18289a7-ec17-4ccd-a61c-57b204d07d8a";
 	static AwsCrypto crypto = AwsCrypto.builder().withCommitmentPolicy(CommitmentPolicy.RequireEncryptRequireDecrypt)
 			.build();
@@ -38,8 +38,8 @@ public class AmazonKMS {
 			.buildStrict(keyArn);
 	static Map<String, String> encryptionContext = Collections.singletonMap("ExampleContextKey", "ExampleContextValue");
 
-	---------------------------------------------------------------------------------------------------------------------------
- */
+// 	---------------------------------------------------------------------------------------------------------------------------
+//  */
 
 
 
